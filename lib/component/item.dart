@@ -49,7 +49,8 @@ class Item extends StatelessWidget {
                 player.play(AssetSource(number.Sound));
               },
               icon: const Icon(
-                Icons.play_arrow,
+                Icons.volume_up,
+                color: Colors.black,
                 size: 35,
               ),
             ),
@@ -63,10 +64,6 @@ class Item extends StatelessWidget {
   }
 }
 
- // تأكد من أن المسار صحيح
-
- // استيراد مكتبة audioplayers
-
 class PhraseItem extends StatelessWidget {
   final Phrase phrase;
 
@@ -74,7 +71,7 @@ class PhraseItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AudioPlayer player = AudioPlayer(); // إنشاء مشغل الصوت
+    final AudioPlayer player = AudioPlayer();
 
     return Container(
       padding: const EdgeInsets.all(10),
@@ -92,7 +89,8 @@ class PhraseItem extends StatelessWidget {
             children: [
               Text(
                 phrase.Gm_name,
-                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 5),
               Text(
@@ -105,7 +103,7 @@ class PhraseItem extends StatelessWidget {
             icon: const Icon(Icons.volume_up, color: Colors.blueGrey),
             iconSize: 30,
             onPressed: () {
-              player.play(AssetSource(phrase.Sound)); // تشغيل الصوت عند الضغط على الزر
+              player.play(AssetSource(phrase.Sound));
             },
           ),
         ],
@@ -113,5 +111,3 @@ class PhraseItem extends StatelessWidget {
     );
   }
 }
-
-
