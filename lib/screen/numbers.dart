@@ -71,29 +71,14 @@ class NumbersPage extends StatelessWidget {
           ),
         ),
       ),
-      body: ListView(
-        children: getList(numbers),
-      ),
+      body: ListView.builder(
+          itemCount: numbers.length,
+          itemBuilder: (context, index) {
+            return Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Item(number: numbers[index]),
+            );
+          }),
     );
   }
-}
-
-List<Widget> getList(List<Number> numbers) {
-  List<Widget> itemList = [];
-  itemList.add(
-    const SizedBox(
-      height: 20,
-    ),
-  );
-  for (int i = 0; i < numbers.length; i++) {
-    itemList.add(Item(number: numbers[i]));
-    if (i < numbers.length - 1) {
-      itemList.add(
-        const SizedBox(
-          height: 20,
-        ),
-      );
-    }
-  }
-  return itemList;
 }

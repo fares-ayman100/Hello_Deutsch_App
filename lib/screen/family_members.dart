@@ -42,8 +42,8 @@ class FamilyMembersPage extends StatelessWidget {
         Sound: 'sounds/family_members/Yonger Broter.m4a'),
     Number(
         Image: 'assets/images/family_members/family_younger_sister.png',
-        Gm_name: 'Jünger Schwester',
-        En_name: 'Younger Sister',
+        Gm_name: 'Schwester',
+        En_name: 'Sister',
         Sound: 'sounds/family_members/Yonger sister.m4a'),
   ];
 
