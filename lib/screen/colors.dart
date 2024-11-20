@@ -9,7 +9,7 @@ class ColorPage extends StatelessWidget {
         Image: 'assets/images/colors/color_white.png',
         Gm_name: 'Weiß',
         En_name: 'White',
-        Sound: 'sounds/colors/Black.m4a'),
+        Sound: 'sounds/colors/white.m4a'),
     Number(
         Image: 'assets/images/colors/yellow.png',
         Gm_name: 'Gelb',
