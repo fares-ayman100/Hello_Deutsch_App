@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:german_app/component/item.dart';
+import 'package:german_app/Widget/List_Item.dart';
 import 'package:german_app/models/number.dart';
 
 class NumbersPage extends StatelessWidget {
@@ -76,7 +76,7 @@ class NumbersPage extends StatelessWidget {
           itemBuilder: (context, index) {
             return Padding(
               padding: const EdgeInsets.only(top: 20),
-              child: Item(number: numbers[index]),
+              child: List_Item(number: numbers[index]),
             );
           }),
     );

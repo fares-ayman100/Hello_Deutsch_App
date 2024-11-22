@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:german_app/component/category.dart';
+import 'package:german_app/Widget/category.dart';
 import 'package:german_app/screen/colors.dart';
 import 'package:german_app/screen/family_members.dart';
-import 'package:german_app/screen/numbers.dart';
-import 'package:german_app/screen/phrases.dart';
+import 'package:german_app/screen/Numbers.dart';
+import 'package:german_app/screen/Phrases.dart';
 
 
 class Home_pages extends StatelessWidget {

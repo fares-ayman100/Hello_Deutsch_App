@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:german_app/component/item.dart';
+import 'package:german_app/Widget/List_Item.dart';
+import 'package:german_app/Widget/Phrases_Item.dart';
 import 'package:german_app/models/phrases.dart';
 
 class PhrasesPage extends StatelessWidget {

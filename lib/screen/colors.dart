@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:german_app/component/item.dart';
+import 'package:german_app/Widget/List_Item.dart';
 import 'package:german_app/models/number.dart';
 
 class ColorPage extends StatelessWidget {
@@ -76,7 +76,7 @@ List<Widget> getList(List<Number> numbers) {
     ),
   );
   for (int i = 0; i < numbers.length; i++) {
-    itemList.add(Item(number: numbers[i]));
+    itemList.add(List_Item(number: numbers[i]));
     if (i < numbers.length - 1) {
       itemList.add(
         const SizedBox(
